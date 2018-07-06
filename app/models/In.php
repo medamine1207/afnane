@@ -2,6 +2,7 @@
 
 namespace App\models;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
 class In extends Model
@@ -14,7 +15,8 @@ class In extends Model
 	    protected $table = 'tbl_ins';
 	    
 
-	    protected $dates = ['updated_in', 'created_in'];
+	    protected $dates = ['updated_at', 'created_at'];
+
 
 
 

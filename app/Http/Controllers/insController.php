@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\models\In;
+use App\models\Out;
 use Illuminate\Http\Request;
 
 class insController extends Controller
@@ -13,7 +15,7 @@ class insController extends Controller
      */
     public function index()
     {
-       return view('ins.index');
+        
     }
 
     /**
