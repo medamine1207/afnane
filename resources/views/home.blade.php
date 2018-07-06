@@ -1,6 +1,7 @@
 @extends('layouts.default')
 @section('content')
-<h1 style="margin: 20px; text-align: center; text-decoration:  underline ;">Listes des entrées et sorties de caisse</h1>
+
+<h1 style="margin: 20px; text-align: center; text-decoration:  underline ;">Listes des entrées et sorties de caisse du {{Carbon\Carbon::now()->format('d-m-Y')}}</h1>
 
 <table class="table table-striped table-bordered table-sm">
 	<legend class="text-warning" style="margin: 10px; text-decoration: underline;">Liste des entrées:</legend>
@@ -46,6 +47,8 @@
 	      
 	      <th scope="col">Motif de sortie</th>
 	      <th scope="col">Montant sortie</th>
+	      <th scope="col">Date creation</th>
+	      <th scope="col">Heure Creation</th>
 	      
 	    </tr>
 	  </thead>
@@ -57,11 +60,14 @@
 	    		<td>aucun enregistrement trouvé</td>
 	    	
 	    	@else
-		    	@foreach ($outs as $out)	    		
+		    	@foreach ($outs as $out)
+		    	<tr>	    		
 				      <td>{{$out->motif_out}}</td>
 				      <td>{{$out->montant_out}}</td>
-		    	@endforeach
-					
+				      <td>{{Carbon\Carbon::parse($out->created_at)->format('d-m-Y')}}</td>
+	      			  <td>{{Carbon\Carbon::parse($out->created_at)->format('H:i:s')}}</td>
+				</tr>
+		    	@endforeach					
 			@endif
 		</tr>    
 	  </tbody>

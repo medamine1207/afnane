@@ -15,7 +15,7 @@ class insController extends Controller
      */
     public function index()
     {
-        
+        return view('ins.index');
     }
 
     /**

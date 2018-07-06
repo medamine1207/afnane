@@ -12,9 +12,9 @@
       <div class="collapse navbar-collapse " id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Acceuil</a>
+            <a class="nav-link" href="{{route('home')}}">Acceuil</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="{{route('ins.index')}}">Entrées <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
