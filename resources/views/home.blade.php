@@ -21,6 +21,8 @@
     	@if ($ins->count()==0)
     		<td>aucun enregistrement trouvé</td>
     		<td>aucun enregistrement trouvé</td>
+    		<td>aucun enregistrement trouvé</td>
+    		<td>aucun enregistrement trouvé</td>
     	@else
 	    	@foreach ($ins as $in)
 	    	<tr>
@@ -56,6 +58,8 @@
 	    <tr>
 	    	@if ($outs->count()==0)
 	    	
+	    		<td>aucun enregistrement trouvé</td>
+	    		<td>aucun enregistrement trouvé</td>
 	    		<td>aucun enregistrement trouvé</td>
 	    		<td>aucun enregistrement trouvé</td>
 	    	

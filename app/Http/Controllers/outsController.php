@@ -13,7 +13,7 @@ class outsController extends Controller
      */
     public function index()
     {
-        //
+        return view('outs.index');
     }
 
     /**
