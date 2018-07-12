@@ -19,12 +19,14 @@ class homeController extends Controller
         //effectuer la requete sur la table tbl_ins pour avoir tous les enregistrements qui concorde avec la date $today
         $ins = DB::table('tbl_ins')
         			->whereDate('created_at','=',$today)
+                    ->orderBy('created_at','desc')
         			->get();
 
 
  		//effectuer la requete sur la table tbl_outs pour avoir tous les enregistrements qui concorde avec la date $today
  		$outs = DB::table('tbl_outs')
         			->whereDate('created_at','=',$today)
+                    ->orderBy('created_at','desc')
         			->get();
 
     	//retourner la vue en question et y passer les données collecté 

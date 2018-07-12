@@ -15,7 +15,7 @@
             <a class="nav-link {{active(route('home'))}}" href="{{route('home')}}">Acceuil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{active(route('ins.index'))}}" href="{{route('ins.index')}}">Entrées <span class="sr-only">(current)</span></a>
+            <a class="nav-link {{active(route('ins.create'))}}" href="{{route('ins.create')}}">Entrées <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link {{active(route('outs.index'))}}" href="{{route('outs.index')}}">Sorties</a>

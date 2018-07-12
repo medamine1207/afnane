@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\FormStoreIn;
 use App\models\In;
 use App\models\Out;
 use Illuminate\Http\Request;
@@ -15,7 +16,7 @@ class insController extends Controller
      */
     public function index()
     {
-        return view('ins.index');
+        dd('test de index');
     }
 
     /**
@@ -25,7 +26,7 @@ class insController extends Controller
      */
     public function create()
     {
-        //
+        return view('ins.create');
     }
 
     /**
@@ -34,9 +35,12 @@ class insController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(FormStoreIn $request)
     {
-        //
+        //$validated = $request->validated();
+        In::create(['montant_in'=>$request->f_montant_in, 'motif_in'=>$request->f_motif_in, 'remarque_in'=>$request->f_remarque_in]);
+        return redirect()->route('home');
+      
     }
 
     /**

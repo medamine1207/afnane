@@ -1,10 +1,17 @@
 @extends('layouts.default')
 @section('content')
 
-<h1 style="margin: 20px; text-align: center; text-decoration:  underline ;">Listes des entrées et sorties de caisse du {{Carbon\Carbon::now()->format('d-m-Y')}}</h1>
+
+<nav aria-label="breadcrumb" style="margin: 20px;">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Listes des entrées et sorties de caisse du {{Carbon\Carbon::now()->format('d-m-Y')}}</li>
+  </ol>
+</nav>
+
+
 
 <table class="table table-striped table-bordered table-sm">
-	<legend class="text-warning" style="margin: 10px; text-decoration: underline;">Liste des entrées:</legend>
+	<legend class="text-warning" style="margin: 10px;">Liste des entrées:</legend>
 	 
   <thead class="thead-dark">
     <tr>
@@ -43,7 +50,7 @@
 </table>
 
 <table class="table table-bordered table-striped table-sm">
-	 <legend class="text-warning" style="margin: 10px; text-decoration: underline;">Liste des sorties:</legend>
+	 <legend class="text-warning" style="margin: 10px;">Liste des sorties:</legend>
 	  <thead class="thead-dark">
 	    <tr>
 	      
