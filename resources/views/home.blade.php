@@ -2,6 +2,7 @@
 @section('content')
 
 
+
 <nav aria-label="breadcrumb" style="margin: 20px;">
   <ol class="breadcrumb">
     <li class="breadcrumb-item active" aria-current="page">Listes des entrées et sorties de caisse du {{Carbon\Carbon::now()->format('d-m-Y')}}</li>
@@ -83,7 +84,6 @@
 		</tr>    
 	  </tbody>
 </table>
-
-
-
+<script src="//code.jquery.com/jquery.js"></script>
+@include('flashy::message')
 @stop

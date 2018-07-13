@@ -30,4 +30,16 @@ class FormStoreIn extends FormRequest
 
         ];
     }
+
+    public function messages()
+    {
+        return [
+
+                'f_montant_in.required'=>'Le montant est requis',
+                'f_montant_in.numeric'=>'Le montant doit être numerique',
+                'f_motif_in.required'=>'Le motif est requis',
+                'f_remarque_in.required'=>'La remarque est requise',
+                'f_remarque_in.min'=>'La remarque doit avoir au minimum 3 caractères',
+        ];
+    }
 }

@@ -1,9 +1,9 @@
-<div class="container-fluid" style="background-color: rgb(235, 172, 41);height: 50px; position: relative; padding-left: 40%; ">
+<div class="container-fluid navbar-fixed-top" style="background-color: rgb(235, 172, 41);height: 50px; position: relative; padding-left: 40%; ">
   <div style="color: white; position: absolute; top: 50%; transform: translateY(-50%); ">
      votre solde est:1250000
   </div>
 </div>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-fixed-top">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark ">
       
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
