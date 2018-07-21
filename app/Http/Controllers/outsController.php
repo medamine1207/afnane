@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\FormStoreOut;
+use App\models\Out;
 use Illuminate\Http\Request;
+use MercurySeries\Flashy\Flashy;
 
 class outsController extends Controller
 {
@@ -23,7 +26,7 @@ class outsController extends Controller
      */
     public function create()
     {
-        //
+        return view('outs.create');
     }
 
     /**
@@ -32,9 +35,13 @@ class outsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(FormStoreOut $request)
     {
-        //
+      Out::create(['montant_out'=>$request->f_montant_out, 'motif_out'=>$request->f_motif_out, 'remarque_out'=>$request->f_remarque_out]);
+
+        Flashy::error('Sortie enregistré avec succès');
+        
+        return redirect()->route('home');
     }
 
     /**

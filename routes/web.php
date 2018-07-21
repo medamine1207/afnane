@@ -13,3 +13,4 @@
 Route::get('/','homeController@home')->name('home');
 Route::resource('ins','insController');
 Route::resource('outs','outsController');
+Route::resource('archives','archivesController');

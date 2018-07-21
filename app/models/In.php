@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class In extends Model
 {
-    	protected $fillable = ['montant_in','motif_in','remarque_in','date_in'];
+    	protected $fillable = ['montant_in','motif_in','remarque_in'];
     	protected $primaryKey = 'id_in';
 
 	   

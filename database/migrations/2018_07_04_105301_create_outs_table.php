@@ -29,6 +29,6 @@ class CreateOutsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('outs');
+        Schema::dropIfExists('tbl_outs');
     }
 }

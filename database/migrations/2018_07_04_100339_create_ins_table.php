@@ -29,6 +29,6 @@ class CreateInsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ins');
+        Schema::dropIfExists('tbl_ins');
     }
 }

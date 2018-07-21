@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Out extends Model
 {
-   protected $fillable = ['montant_out','motif_out','remarque_out','date_out'];
+   protected $fillable = ['montant_out','motif_out','remarque_out'];
     	protected $primaryKey = 'id_out';
 
 	   

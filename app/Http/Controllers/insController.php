@@ -40,7 +40,9 @@ class insController extends Controller
     {
         //$validated = $request->validated();
         In::create(['montant_in'=>$request->f_montant_in, 'motif_in'=>$request->f_motif_in, 'remarque_in'=>$request->f_remarque_in]);
-         Flashy::success('Entrée ajouté avec succès');
+
+        Flashy::success('Entrée ajouté avec succès');
+        
         return redirect()->route('home');
       
     }

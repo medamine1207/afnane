@@ -18,10 +18,10 @@
             <a class="nav-link {{active(route('ins.create'))}}" href="{{route('ins.create')}}">Entrées <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{active(route('outs.index'))}}" href="{{route('outs.index')}}">Sorties</a>
+            <a class="nav-link {{active(route('outs.create'))}}" href="{{route('outs.create')}}">Sorties</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">stopper</a>
+            <a class="nav-link {{active(route('archives.create'))}}" href="{{route('archives.create')}}">stopper</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Consultations</a>

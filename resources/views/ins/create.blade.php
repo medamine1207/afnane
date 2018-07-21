@@ -2,7 +2,7 @@
 @section('content')
 
 <nav aria-label="breadcrumb" style="margin-top:40px; margin-right: 30px;margin-left: 30px;">
-  <ol class="breadcrumb">
+  <ol class="breadcrumb alert-success">
     <li class="breadcrumb-item active" aria-current="page">veuillez remplir le formulaire des <strong style="color: black;">entrées</strong></li>
   </ol>
 </nav>
